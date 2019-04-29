@@ -1,0 +1,102 @@
+html,
+body,
+header,
+#intro {
+    height: 95%;
+}
+
+#intro {
+  position: relative;
+}
+
+#intro {
+  fill: #087EE1;
+  background: #087EE1;
+  background: linear-gradient(90deg, #087EE1 0%, #93FB9D 100%);
+}
+
+#intro:before {
+  fill: #087EE1;
+  background: #087EE1;
+  background: linear-gradient(270deg, #087EE1 0%, #93FB9D 100%);
+}
+
+#intro:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  animation: fadeBoth 5s infinite;
+}
+
+@keyframes fadeBoth {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.avatar{
+  width: 20%;
+}
+
+.profile_section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img{
+  margin-bottom: 1em;
+}
+
+p{
+  font-weight: 300;
+}
+
+.svg-triangle-bottom {
+  position: absolute;
+  top: 81.5%;
+  left: 50%;
+  z-index: 2;
+}
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-overlay {
+  margin: auto;
+  width: 94.7%;
+  height: 22%;
+  padding: 10px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  top: 10;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+	opacity: 0;
+  border-radius: 5px;
+	transition: opacity .9s;
+  transition: transform .9s;
+  transform: translateY(5%);
+}
+
+.text-container h4{
+  font-weight: bold;
+  color: #FFF;
+}
+
+.text-container p{
+  color: grey;
+}
